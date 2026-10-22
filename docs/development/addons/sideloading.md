@@ -71,7 +71,7 @@ Packages installed before Hibi accepted stylesheets and theme files keep ignorin
 
 ## Signatures and unsigned packages
 
-New installs and replacements require a valid Hibi signature by default. Ask Hibi's maintainers to review your source and compiled package for signing. Sign the finished package before publishing it, and keep the signature beside `hibi-addon.json`. Rebuilding, editing the readme, or adding or removing a package file requires a new signature. See [maintainer signing instructions](signing.md).
+New installs and replacements require a valid Hibi signature by default. Addons listed in the Hibi garden are signed when they are accepted; see [publishing to the Hibi garden](publishing-to-the-garden.md). For other packages, ask Hibi's maintainers to review your source and compiled package for signing. Sign the finished package before publishing it, and keep the signature beside `hibi-addon.json`. Rebuilding, editing the readme, or adding or removing a package file requires a new signature. See [maintainer signing instructions](signing.md).
 
 For packages you trust that have not been signed, turn on **Allow unsigned addons** in **Settings → Addon Manager → Security**, then install again. This permits unsigned packages, including replacements. It never permits a broken signature or a revoked version. Existing unsigned installations keep working when this setting is off. Built-in addons and the source development watcher do not need package signatures.
 
@@ -158,7 +158,7 @@ Publish the prepared files in a public HTTPS Git repository or ZIP archive. Hibi
 
 Git packages need their compiled entry committed, and Git installed on the user's machine. Private repositories, SSH URLs, submodules, and Git LFS files are not supported. Do not include `node_modules`, secrets, or native executables.
 
-To start a new repository with an example extension and theme, use the [addon starter](https://github.com/hibigarden/addon-starter). To list a package in Hibi's addon directory, see [publishing to the Hibi garden](publishing-to-the-garden.md).
+To start a new repository, use the [addon starter](https://github.com/hibigarden/addon-starter) for an extension or the [theme starter](https://github.com/hibigarden/theme-starter) for a theme. To list a package in Hibi's addon directory, see [publishing to the Hibi garden](publishing-to-the-garden.md).
 
 ### GitHub links
 
